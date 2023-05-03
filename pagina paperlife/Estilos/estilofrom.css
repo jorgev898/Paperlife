@@ -1,0 +1,30 @@
+* {
+    font-family: Raleway;
+    color: #3f3e3e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto asegura que el relleno y el borde se incluyan en el tamaño total del elemento */
+  }
+
+
+.padre{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9eecd;
+}
+.hijo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
