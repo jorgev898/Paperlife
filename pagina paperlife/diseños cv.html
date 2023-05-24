@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Diseño de Currículum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/estilos.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
+  
+      h1 {
+        color: orange;
+      }
+  
+      .cv-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .cv-design {
+        text-align: center;
+        margin: 10px;
+        cursor: pointer;
+      }
+  
+      .cv-design img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Selección de Diseño de Currículum Vitae</h1>
+  </header>
+    <div class="cv-container">
+      <div class="cv-design" onclick="seleccionarDiseno('diseno1.html')">
+        <h3>Diseño 1</h3>
+        <img src="Imagenes/diseño1.jpg" alt="Diseño 1">
+      </div>
+  
+      <div class="cv-design" onclick="seleccionarDiseno('diseno2.html')">
+        <h3>Diseño 2</h3>
+        <img src="Imagenes/diseño2.jpg" alt="Diseño 2">
+      </div>
+    </div>
+  
+    <div class="cv-container">
+      <div class="cv-design" onclick="seleccionarDiseno('diseno3.html')">
+        <h3>Diseño 3</h3>
+        <img src="Imagenes/diseñohojadevida3.jpg" alt="Diseño 3">
+      </div>
+  
+      <div class="cv-design" onclick="seleccionarDiseno('diseno4.html')">
+        <h3>Diseño 4</h3>
+        <img src="Imagenes/diseño5.jpg" alt="Diseño 4">
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <script>
+    function seleccionarDiseno(direccion) {
+      window.location.href = direccion;
+    }
+  </script>
+</body>
+
+</html>
+
+</body>
+</html>

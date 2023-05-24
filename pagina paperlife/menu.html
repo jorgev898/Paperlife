@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sección plegable</title>
+  <link rel="stylesheet" type="text/css" href="Estilos/estilos.css">
+</head>
+<body>
+  <button id="boton" class="botoninfobasica">Mostrar/Ocultar sección plegable</button>
+  <div id="seccion" class="plegable">
+    <textarea id="texto" rows="4" cols="50"></textarea>
+  </div>
+  <script>
+    document.getElementById('boton').addEventListener('click', function() {
+      var seccion = document.getElementById('seccion');
+      if (seccion.style.display === 'none') {
+        seccion.style.display = 'block';
+      } else {
+        seccion.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

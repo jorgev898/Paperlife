@@ -8,9 +8,12 @@
     <link rel="stylesheet" type="text/css" href="Estilos/loginstyles.css">
     <title>Document</title>
     <script>
+        function dataentered() {
+            alert("Usted se ha registrado correctamente");
+        }
+
         function next() {
-            event.preventDefault();
-            window.location.href = "crear_hoja_de_vida.html";
+            window.location.href = "pagina_principal.html";
         }
     </script>
     <style>
@@ -22,11 +25,13 @@
 <body>
 
     <div class="contlogin">
-        <h2>INICIAR SESIÓN</h2>
-        <form class="loginform" onsubmit="next();">
+        <h2>CREAR CUENTA</h2>
+        <form class="loginform" onsubmit="dataentered(); next();" action="loginn.php" method="POST">
           <input type="text" name="usuario" placeholder="Usuario" required>
           <input type="password" name="contrasena" placeholder="Contraseña" required>
-          <input type="submit" value="Log In">
+          <input type="email" name="correo" placeholder="Correo" required>
+          <input type="date" name="fecha" required>
+          <input type="submit" value="Sign up">
         </form>
         <img  src ="Imagenes/iconossm.png" width="500" height="100" >
     </div>

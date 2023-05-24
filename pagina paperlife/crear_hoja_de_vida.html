@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/estilos.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="contenedorpaginadatos">
+        <div class="Arriba">
+            <h1 class="titulo1">PaperLife</h1>
+            <ul class="list">
+                <li><a href="download"><img src="Imagenes/download.png"></a></li>
+                <li><a href="">Crear</a></li>
+            </ul>
+        </div>
+        <div class="minicontenedor">
+            <div class="datospersonales">
+            <h3>Datos personales</h3>
+            </div>
+            <div class="primero">
+                <div class="foto">
+                    <h4>Foto</h4>
+                    <div class="image-input">
+                        <input type="file" name="image" id="image">
+                        <label for="image"><span><img src="Imagenes/simbolo_imagen.png"></span></label>
+                      </div>               
+                </div>
+                <div class="infobasica">
+                    <div class="pqno"> 
+                        <div class="nombreinfobasica">
+                            <h4>Nombre</h4> 
+                            <input type="text" class="botoninfobasica" pattern="^[a-zA-ZÀ-ÿ\s]{1,40}$" title="Solo se permite el ingreso de caracteres">
+                        </div>
+                        <div class="apellidoinfobasica">
+                            <h4>Apellidos</h4> 
+                            <input type="text" class="botoninfobasica" pattern="^[a-zA-ZÀ-ÿ\s]{1,40}$" title="Solo se permite el ingreso de caracteres"> 
+                        </div>
+                    </div>
+                    <div class="alinear">
+                        <h4>Correo electronico</h4>
+                        <input type="email" class="botoninfobasica1">
+                    </div>    
+                </div>
+            </div>
+            <div class="contenedorsegundoyprimero">
+                <div class="segundo">
+                    <div class="paraarriba">
+                        <h4>Teléfono</h4>
+                        <input type="tel" class="botoninfobasica2">
+                    </div>
+                    <div class="direccion">
+                        <h4>Dirección</h4>
+                        <input type="text" class="botoninfobasica2"  title="Ingrese su dirección">
+                    </div>
+                </div>
+                <div class="tercero">
+                    <div class="pqno"> 
+                        <div class="nombreinfobasica">
+                            <h4>Código postal</h4> 
+                            <input type="text" class="botoninfobasica3" pattern="^[a-zA-ZÀ-ÿ\s]{1,40}$" title="Solo se permite el ingreso de caracteres">
+                        </div>
+                        <div class="apellidoinfobasica">
+                            <h4>Localidad</h4> 
+                            <input type="text" class="botoninfobasica3" pattern="^[a-zA-ZÀ-ÿ\s]{1,40}$" title="Solo se permite el ingreso de caracteres"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="cuarto">
+                    <div class="contenedor-info-adicional">
+                        <details>
+                            <summary class="summaryredondeado">Título </summary>
+                            <div class="inputsummary">
+                                <input type="text" class="desplegable">
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Fecha de nacimiento</summary>
+                            <div class="inputsummary">
+                                <input type="date" class="desplegable">
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Lugar de nacimiento</summary>
+                            <div class="inputsummary">
+                                <input type="text" class="desplegable">
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Carné de conducir</summary>
+                            <div class="inputsummary">
+                                <input type="text" class="desplegable">
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Genero</summary>
+                            <div class="inputsummary">
+                                <select name="genero" class="desplegable">
+                                    <option value="">Seleccione</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                    <option value="prefiero_no_decirlo">Prefiero no decirlo</option>
+                                  </select>
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Nacionalidad</summary>
+                            <div class="inputsummary">
+                                <input type="text" class="desplegable">
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Estado civil</summary>
+                            <div class="inputsummary">
+                                <input type="text" class="desplegable">
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Sitio web</summary>
+                            <div class="inputsummary">
+                                <input type="url" class="desplegable">
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Linkedln</summary>
+                            <div class="inputsummary">
+                                <input type="text" class="desplegable">
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="summaryredondeado">Campo personalizado</summary>
+                            <div class="inputsummary">
+                                <input type="text" class="desplegable">
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <hr>
+                <div class="contenedor1y2">
+                    <div class="uno">
+                        <h2>Nombre</h2>
+                    </div>
+                    <div class="dos">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+</body>
+</html>
